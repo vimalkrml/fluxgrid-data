@@ -1,0 +1,49 @@
+{
+  "name": "@datafluxgrid/fluxgrid-data",
+  "version": "1.0.0",
+  "description": "Composable frontend data pipelines — search, sort, paginate, filter and group arrays with one reusable query definition.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "test": "node --test src/index.test.js",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "datafluxgrid",
+    "fluxgrid",
+    "data",
+    "pipeline",
+    "filter",
+    "sort",
+    "paginate",
+    "search",
+    "frontend",
+    "react",
+    "vue",
+    "typescript",
+    "zero-dependencies",
+    "tree-shakeable"
+  ],
+  "author": "Vimal K R",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vimalkrml/fluxgrid-data"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
