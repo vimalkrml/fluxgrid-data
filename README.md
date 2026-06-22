@@ -11,9 +11,7 @@ Works with JavaScript, TypeScript, React, Vue, Svelte, Angular, and plain HTML. 
 
 ---
 
-## Why @datafluxgrid/fluxgrid-data
-
-### Competitor comparison
+## Competitor Comparison
 
 | Feature                                                    | `@datafluxgrid/fluxgrid-data` | `@tanstack/react-table` | `fuse.js` | `match-sorter` | `datapipe-js` |
 | ---------------------------------------------------------- | ----------------------------- | ----------------------- | --------- | -------------- | ------------- |
@@ -40,10 +38,6 @@ Works with JavaScript, TypeScript, React, Vue, Svelte, Angular, and plain HTML. 
 
 ```bash
 npm install @datafluxgrid/fluxgrid-data
-
-yarn add @datafluxgrid/fluxgrid-data
-
-pnpm add @datafluxgrid/fluxgrid-data
 ```
 
 ### CDN — no build step
@@ -414,6 +408,8 @@ const {
 | `ms`           | `number`  | Query execution time in milliseconds                                      |
 
 ---
+
+## Why @datafluxgrid/fluxgrid-data
 
 ### Why not just use TanStack Table?
 
