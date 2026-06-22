@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Users\\vimal\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'build'
+1 verbose cli ]
+2 info using npm@2.15.12
+3 info using node@v22.16.0
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info prebuild @datafluxgrid/fluxgrid-data@1.0.0
+6 info build @datafluxgrid/fluxgrid-data@1.0.0
+7 verbose unsafe-perm in lifecycle true
+8 verbose stack TypeError [ERR_INVALID_ARG_VALUE]: The property 'options.env['npm_config_______r_e_g_i_s_t_r_y___n_p_m_j_s___o_r_g_______a_u_t_h_T_o_k_e_n_']' must be a string without null bytes. Received '\x00n\x00p\x00m\x00_\x00a\x00Y\x00j\x00Y\x00y\x00c\x00s\x00I\x00y\x00S\x00P\x003\x00H\x00H\x001\x008\x00j\x00m\x00m\x009\x00D\x...
+8 verbose stack     at validateArgumentNullCheck (node:child_process:965:11)
+8 verbose stack     at normalizeSpawnArguments (node:child_process:692:7)
+8 verbose stack     at spawn (node:child_process:746:13)
+8 verbose stack     at spawn (C:\Users\vimal\node_modules\npm\lib\utils\spawn.js:7:13)
+8 verbose stack     at runCmd_ (C:\Users\vimal\node_modules\npm\lib\utils\lifecycle.js:211:14)
+8 verbose stack     at runCmd (C:\Users\vimal\node_modules\npm\lib\utils\lifecycle.js:176:5)
+8 verbose stack     at runPackageLifecycle (C:\Users\vimal\node_modules\npm\lib\utils\lifecycle.js:138:3)
+8 verbose stack     at Array.<anonymous> (C:\Users\vimal\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+8 verbose stack     at LOOP (C:\Users\vimal\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+8 verbose stack     at chain (C:\Users\vimal\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+9 verbose cwd C:\Users\vimal\Documents\Templates\fluxgrid-data-npm
+10 error Windows_NT 10.0.26200
+11 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Users\\vimal\\node_modules\\npm\\bin\\npm-cli.js" "run" "build"
+12 error node v22.16.0
+13 error npm  v2.15.12
+14 error code ERR_INVALID_ARG_VALUE
+15 error The property 'options.env['npm_config_______r_e_g_i_s_t_r_y___n_p_m_j_s___o_r_g_______a_u_t_h_T_o_k_e_n_']' must be a string without null bytes. Received '\x00n\x00p\x00m\x00_\x00a\x00Y\x00j\x00Y\x00y\x00c\x00s\x00I\x00y\x00S\x00P\x003\x00H\x00H\x001\x008\x00j\x00m\x00m\x009\x00D\x...
+16 error If you need help, you may report this error at:
+16 error     <https://github.com/npm/npm/issues>
+17 verbose exit [ 1, true ]
