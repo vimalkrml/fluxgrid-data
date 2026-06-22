@@ -11,6 +11,31 @@ Works with JavaScript, TypeScript, React, Vue, Svelte, Angular, and plain HTML. 
 
 ---
 
+## Why @datafluxgrid/fluxgrid-data
+
+### Competitor comparison
+
+| Feature                                                    | `@datafluxgrid/fluxgrid-data` | `@tanstack/react-table` | `fuse.js` | `match-sorter` | `datapipe-js` |
+| ---------------------------------------------------------- | ----------------------------- | ----------------------- | --------- | -------------- | ------------- |
+| Search across fields                                       | Yes                           | Yes                     | Yes       | Yes            | Yes           |
+| Sort                                                       | Yes                           | Yes                     | No        | Yes            | Yes           |
+| Paginate                                                   | Yes                           | Yes                     | No        | No             | No            |
+| GroupBy                                                    | Yes                           | Yes                     | No        | No             | Yes           |
+| Full meta output (total, from, to, hasNext, hasPrev)       | Yes                           | No — manual             | No        | No             | No            |
+| isEmpty / isNoResults states                               | Yes                           | No                      | No        | No             | No            |
+| allSelected / someSelected helpers                         | Yes                           | No                      | No        | No             | No            |
+| Serializable toJSON() / fromJSON()                         | Yes                           | No                      | No        | No             | No            |
+| Framework agnostic (React, Vue, Svelte, Angular, plain JS) | Yes                           | No — needs adapter      | Yes       | Yes            | Yes           |
+| No columns definition required                             | Yes                           | No — mandatory          | Yes       | Yes            | Yes           |
+| Zero dependencies                                          | Yes                           | Yes                     | Yes       | No             | No            |
+| TypeScript support                                         | Yes                           | Yes                     | Yes       | Yes            | Partial       |
+| Works in plain script tag (CDN)                            | Yes                           | No                      | Yes       | No             | No            |
+| Actively maintained                                        | Yes                           | Yes                     | Yes       | Yes            | No            |
+| Bundle size (minzipped)                                    | ~1 kB                         | ~15–20 kB               | ~5 kB     | ~3 kB          | ~8 kB         |
+| Setup lines of code                                        | ~5                            | ~40–60                  | ~10       | ~5             | ~10           |
+
+---
+
 ## Installation
 
 ```bash
@@ -387,31 +412,6 @@ const {
 | `allSelected`  | `boolean` | True when all rows on current page are selected                           |
 | `someSelected` | `boolean` | True when some but not all rows are selected — for indeterminate checkbox |
 | `ms`           | `number`  | Query execution time in milliseconds                                      |
-
----
-
-## Why @datafluxgrid/fluxgrid-data
-
-### Competitor comparison
-
-| Feature                                                    | `@datafluxgrid/fluxgrid-data` | `@tanstack/react-table` | `fuse.js` | `match-sorter` | `datapipe-js` |
-| ---------------------------------------------------------- | ----------------------------- | ----------------------- | --------- | -------------- | ------------- |
-| Search across fields                                       | Yes                           | Yes                     | Yes       | Yes            | Yes           |
-| Sort                                                       | Yes                           | Yes                     | No        | Yes            | Yes           |
-| Paginate                                                   | Yes                           | Yes                     | No        | No             | No            |
-| GroupBy                                                    | Yes                           | Yes                     | No        | No             | Yes           |
-| Full meta output (total, from, to, hasNext, hasPrev)       | Yes                           | No — manual             | No        | No             | No            |
-| isEmpty / isNoResults states                               | Yes                           | No                      | No        | No             | No            |
-| allSelected / someSelected helpers                         | Yes                           | No                      | No        | No             | No            |
-| Serializable toJSON() / fromJSON()                         | Yes                           | No                      | No        | No             | No            |
-| Framework agnostic (React, Vue, Svelte, Angular, plain JS) | Yes                           | No — needs adapter      | Yes       | Yes            | Yes           |
-| No columns definition required                             | Yes                           | No — mandatory          | Yes       | Yes            | Yes           |
-| Zero dependencies                                          | Yes                           | Yes                     | Yes       | No             | No            |
-| TypeScript support                                         | Yes                           | Yes                     | Yes       | Yes            | Partial       |
-| Works in plain script tag (CDN)                            | Yes                           | No                      | Yes       | No             | No            |
-| Actively maintained                                        | Yes                           | Yes                     | Yes       | Yes            | No            |
-| Bundle size (minzipped)                                    | ~1 kB                         | ~15–20 kB               | ~5 kB     | ~3 kB          | ~8 kB         |
-| Setup lines of code                                        | ~5                            | ~40–60                  | ~10       | ~5             | ~10           |
 
 ---
 
