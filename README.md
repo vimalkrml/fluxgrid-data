@@ -9,28 +9,31 @@ Composable frontend data pipelines — search, sort, filter, paginate, and group
 
 Works with JavaScript, TypeScript, React, Vue, Svelte, Angular, and plain HTML. Zero dependencies.
 
----
+## Why @datafluxgrid/fluxgrid-data
 
-## Competitor Comparison
+Stop copy-pasting `.filter().sort().slice()` across every component. `createQuery()` defines your pipeline once — search, sort, paginate, group — and `.run()` returns everything your UI needs in one call.
 
-| Feature                                                    | `@datafluxgrid/fluxgrid-data` | `@tanstack/react-table` | `fuse.js` | `match-sorter` | `datapipe-js` |
-| ---------------------------------------------------------- | ----------------------------- | ----------------------- | --------- | -------------- | ------------- |
-| Search across fields                                       | Yes                           | Yes                     | Yes       | Yes            | Yes           |
-| Sort                                                       | Yes                           | Yes                     | No        | Yes            | Yes           |
-| Paginate                                                   | Yes                           | Yes                     | No        | No             | No            |
-| GroupBy                                                    | Yes                           | Yes                     | No        | No             | Yes           |
-| Full meta output (total, from, to, hasNext, hasPrev)       | Yes                           | No — manual             | No        | No             | No            |
-| isEmpty / isNoResults states                               | Yes                           | No                      | No        | No             | No            |
-| allSelected / someSelected helpers                         | Yes                           | No                      | No        | No             | No            |
-| Serializable toJSON() / fromJSON()                         | Yes                           | No                      | No        | No             | No            |
-| Framework agnostic (React, Vue, Svelte, Angular, plain JS) | Yes                           | No — needs adapter      | Yes       | Yes            | Yes           |
-| No columns definition required                             | Yes                           | No — mandatory          | Yes       | Yes            | Yes           |
-| Zero dependencies                                          | Yes                           | Yes                     | Yes       | No             | No            |
-| TypeScript support                                         | Yes                           | Yes                     | Yes       | Yes            | Partial       |
-| Works in plain script tag (CDN)                            | Yes                           | No                      | Yes       | No             | No            |
-| Actively maintained                                        | Yes                           | Yes                     | Yes       | Yes            | No            |
-| Bundle size (minzipped)                                    | ~1 kB                         | ~15–20 kB               | ~5 kB     | ~3 kB          | ~8 kB         |
-| Setup lines of code                                        | ~5                            | ~40–60                  | ~10       | ~5             | ~10           |
+| Feature               | fluxgrid-data | @tanstack/react-table | fuse.js | match-sorter | datapipe-js |
+| --------------------- | ------------- | --------------------- | ------- | ------------ | ----------- |
+| Search                | Yes           | Yes                   | Yes     | Yes          | Yes         |
+| Sort                  | Yes           | Yes                   | No      | Yes          | Yes         |
+| Paginate              | Yes           | Yes                   | No      | No           | No          |
+| GroupBy               | Yes           | Yes                   | No      | No           | Yes         |
+| Full meta output¹     | Yes           | No — manual           | No      | No           | No          |
+| isEmpty / isNoResults | Yes           | No                    | No      | No           | No          |
+| Checkbox helpers²     | Yes           | No                    | No      | No           | No          |
+| Serializable pipeline | Yes           | No                    | No      | No           | No          |
+| Framework agnostic    | Yes           | No — adapter          | Yes     | Yes          | Yes         |
+| No columns config     | Yes           | No — mandatory        | Yes     | Yes          | Yes         |
+| Zero dependencies     | Yes           | Yes                   | Yes     | No           | No          |
+| TypeScript support    | Yes           | Yes                   | Yes     | Yes          | Partial     |
+| CDN script tag        | Yes           | No                    | Yes     | No           | No          |
+| Actively maintained   | Yes           | Yes                   | Yes     | Yes          | No          |
+| Bundle size           | ~1 kB         | ~15–20 kB             | ~5 kB   | ~3 kB        | ~8 kB       |
+| Setup lines of code   | ~5            | ~40–60                | ~10     | ~5           | ~10         |
+
+¹ total, from, to, hasNext, hasPrev — returned automatically on every `.run()` call.
+² allSelected and someSelected — for select-all checkbox indeterminate state.
 
 ---
 
