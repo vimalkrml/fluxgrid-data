@@ -474,4 +474,4 @@ That is the gap `@datafluxgrid/fluxgrid-data` fills.
 
 MIT © [Vimal K R](https://github.com/vimalkrml)
 
-Part of the [Datafluxgrid](https://datafluxgrid.com) ecosystem.
+Part of the [Datafluxgrid](https://www.linkedin.com/company/datafluxgrid) ecosystem.

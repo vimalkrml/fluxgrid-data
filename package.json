@@ -1,6 +1,6 @@
 {
   "name": "@datafluxgrid/fluxgrid-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Composable frontend data pipelines — search, sort, paginate, filter and group arrays with one reusable query definition.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
