@@ -1,0 +1,5 @@
+src/index.test.js
+.npmrc
+.gitignore
+npm-debug.log
+*.log
