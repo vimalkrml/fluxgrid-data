@@ -1,6 +1,6 @@
 {
   "name": "@datafluxgrid/fluxgrid-data",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Composable frontend data pipelines — search, sort, paginate, filter and group arrays with one reusable query definition.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -72,7 +72,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vimalkrml/fluxgrid-data"
+    "url": "git+https://github.com/vimalkrml/fluxgrid-data.git"
   },
   "publishConfig": {
     "access": "public"
